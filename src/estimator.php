@@ -2,7 +2,7 @@
 
 <?php
 
-require ('challengeOne.php');
+require ('challengesClass.php');
 
 
 function covid19ImpactEstimator($data)

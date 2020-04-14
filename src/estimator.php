@@ -27,9 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 function covid19ImpactEstimator($data)
 {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
+  // $data = trim($data);
+  // $data = stripslashes($data);
+  // $data = htmlspecialchars($data);
 
 
   return $data;

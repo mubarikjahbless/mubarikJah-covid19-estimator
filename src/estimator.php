@@ -9,7 +9,7 @@ require('challengesClass.php');
 $challengeOne_impact = new  impact();
 $challengeOne_SevereImpact = new severeImpact();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $reportedCase = covid19ImpactEstimator($_POST["reportedCase"]);
   $requestedTime = covid19ImpactEstimator($_POST["timeToElapse"]);
   $totalHospitalBeds = covid19ImpactEstimator($_POST["totalHospitalBeds"]);
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   $challengeOne_impact->impact_currentlyInfected($reportedCase, $requestedTime, $totalHospitalBeds, $avgDailyIncomeInUSD, $avgDailyIncomePopulation);
   $challengeOne_SevereImpact->severe_currentlyInfected($reportedCase, $requestedTime, $totalHospitalBeds, $avgDailyIncomeInUSD, $avgDailyIncomePopulation);
-}
+//}
 
 
 
